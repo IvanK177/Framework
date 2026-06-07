@@ -22,11 +22,9 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b transition-all duration-300 ${
-        isScrolled ? "shadow-sm border-zinc-800" : "border-transparent"
-      }`}
+      className="fixed top-0 left-0 w-full z-50 bg-zinc-900/80 backdrop-blur-md border-b border-zinc-800 transition-all duration-300"
     >
-      <div className="max-w-[1400px] mx-auto w-full px-6 lg:px-12 xl:px-24">
+      <div className="max-w-[1600px] mx-auto w-full px-6 md:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo & Brand */}
           <div className="flex items-center gap-2">
@@ -75,15 +73,15 @@ export default function Header() {
             </a>
             <a
               href="mailto:sale@spda-barrier.ru"
-              className="text-sm font-medium text-zinc-400 hover:text-zinc-200 hover-underline-animation transition-colors"
+              className="hidden md:inline-block text-sm font-medium text-zinc-400 hover:text-zinc-200 hover-underline-animation transition-colors"
             >
               sale@spda-barrier.ru
             </a>
             <a
-              href="#contact"
-              className="px-5 py-2.5 bg-teal-600 text-white text-xs font-bold uppercase tracking-widest rounded-full hover:bg-teal-500 transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
+              href="#calculator"
+              className="px-5 py-2.5 bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold uppercase tracking-widest rounded-none transition-all duration-300 shadow-sm active:scale-95 text-center"
             >
-              Перейти в портал
+              Заказать
             </a>
           </div>
 
@@ -153,11 +151,11 @@ export default function Header() {
               sale@spda-barrier.ru
             </a>
             <a
-              href="#contact"
-              className="px-5 py-2.5 bg-teal-600 text-white text-center text-xs font-bold uppercase tracking-widest rounded-full hover:bg-teal-500 transition-all duration-300 block"
+              href="#calculator"
+              className="px-5 py-2.5 bg-teal-600 hover:bg-teal-500 text-white text-center text-xs font-bold uppercase tracking-widest rounded-none transition-all duration-300 active:scale-95 block"
               onClick={() => setIsMenuOpen(false)}
             >
-              Перейти в портал
+              Заказать
             </a>
           </div>
         </div>

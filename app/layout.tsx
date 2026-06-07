@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Onest } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const onest = Onest({
+  variable: "--font-onest",
   subsets: ["latin", "cyrillic"],
 });
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html
       lang="ru"
-      className={`${inter.variable} h-full antialiased dark`}
+      className={`${onest.variable} h-full antialiased dark`}
     >
       <body className="min-h-full flex flex-col bg-zinc-900 text-zinc-100 font-sans">{children}</body>
     </html>

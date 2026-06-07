@@ -6,7 +6,7 @@
 }
 
 @theme {
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-onest), ui-sans-serif, system-ui, sans-serif;
   --color-brand-navy: #14b8a6; /* teal-500 as default light accent in dark theme */
 }
 

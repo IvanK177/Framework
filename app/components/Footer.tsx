@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="bg-zinc-950 text-zinc-300 py-16 border-t border-zinc-800">
-      <div className="max-w-[1400px] mx-auto w-full px-6 lg:px-12 xl:px-24">
+      <div className="max-w-[1600px] mx-auto w-full px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
           
           {/* Brand logo & Copy (Left) */}
@@ -31,10 +31,10 @@ export default function Footer() {
               sale@spda-barrier.ru
             </a>
             <a
-              href="#contact"
-              className="px-4 py-2 bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold uppercase tracking-widest rounded-full transition-all duration-300 shadow-sm"
+              href="#calculator"
+              className="px-4 py-2 bg-teal-600 hover:bg-teal-500 text-white text-xs font-bold uppercase tracking-widest rounded-none transition-all duration-300 active:scale-95 shadow-sm"
             >
-              Перейти в портал
+              Заказать
             </a>
           </div>
 
