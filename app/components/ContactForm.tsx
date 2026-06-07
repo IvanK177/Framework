@@ -23,14 +23,14 @@ export default function ContactForm() {
           <div className="flex flex-col gap-6 md:gap-10 py-6">
             <a
               href="tel:+78005553535"
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white hover:text-teal-400 transition-colors font-mono tracking-tight"
+              className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white hover:text-teal-400 transition-colors font-mono tracking-tight whitespace-nowrap"
             >
               8 (800) 555-35-35
             </a>
             
             <a
               href="mailto:sale@spda-barrier.ru"
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-300 hover:text-teal-400 hover-underline-animation transition-colors font-mono"
+              className="text-lg sm:text-2xl md:text-4xl lg:text-5xl font-bold text-zinc-300 hover:text-teal-400 hover-underline-animation transition-colors font-mono break-all sm:break-normal"
             >
               sale@spda-barrier.ru
             </a>

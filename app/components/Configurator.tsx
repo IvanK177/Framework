@@ -145,7 +145,7 @@ export default function Configurator() {
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                       whileHover={{ y: -4 }}
                       whileTap={{ scale: 0.95 }}
-                      className={`p-8 border text-left flex flex-col justify-between h-64 transition-all duration-300 cursor-pointer rounded-none ${
+                      className={`p-6 sm:p-8 border text-left flex flex-col justify-between min-h-[16rem] h-auto transition-all duration-300 cursor-pointer rounded-none ${
                         isSelected
                           ? "border-teal-500 bg-zinc-800/40"
                           : "border-zinc-800 bg-transparent hover:border-zinc-700"
@@ -184,7 +184,7 @@ export default function Configurator() {
                       transition={{ duration: 0.4, delay: index * 0.08 }}
                       whileHover={{ y: -2 }}
                       whileTap={{ scale: 0.98 }}
-                      className={`p-6 border text-left flex items-start justify-between gap-6 transition-all duration-300 cursor-pointer rounded-none ${
+                      className={`p-4 sm:p-6 border text-left flex items-start justify-between gap-4 sm:gap-6 transition-all duration-300 cursor-pointer rounded-none ${
                         isChecked
                           ? "border-teal-500 bg-zinc-800/40"
                           : "border-zinc-800 bg-transparent hover:border-zinc-700"
@@ -242,7 +242,7 @@ export default function Configurator() {
             <div className="w-full md:w-auto flex flex-col items-center md:items-end gap-2 shrink-0">
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="w-full md:w-auto px-12 py-4.5 bg-teal-600 hover:bg-teal-500 text-white font-bold text-sm uppercase tracking-widest rounded-none transition-all duration-300 transform hover:-translate-y-0.5 active:scale-95 shadow-md hover:shadow-lg text-center whitespace-nowrap"
+                className="w-full md:w-auto px-6 sm:px-12 py-4 bg-teal-600 hover:bg-teal-500 text-white font-bold text-xs sm:text-sm uppercase tracking-widest rounded-none transition-all duration-300 active:scale-95 shadow-md hover:shadow-lg text-center"
               >
                 Оставить заявку на эту комплектацию
               </button>
@@ -264,7 +264,7 @@ export default function Configurator() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.3 }}
-              className="relative w-full max-w-lg bg-zinc-900 border border-zinc-800 shadow-2xl p-8 sm:p-10 overflow-hidden rounded-none"
+              className="relative w-full max-w-lg bg-zinc-900 border border-zinc-800 shadow-2xl p-6 sm:p-10 max-h-[90vh] overflow-y-auto rounded-none"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close Button */}

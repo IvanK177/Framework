@@ -74,7 +74,7 @@ export default function Hero() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="grid grid-cols-3 gap-8 pt-8 w-full max-w-lg border-t border-zinc-800"
+              className="grid grid-cols-3 gap-4 sm:gap-8 pt-8 w-full max-w-lg border-t border-zinc-800"
             >
               <motion.div
                 initial={{ opacity: 0, y: 15 }}
@@ -115,7 +115,7 @@ export default function Hero() {
             className="lg:col-span-5 flex justify-end relative mt-6 lg:mt-0 lg:h-full min-h-[300px] lg:min-h-[480px]"
           >
             {/* Main Image Container */}
-            <div className="relative w-full h-[300px] sm:h-[400px] lg:h-full lg:w-[calc(100%+max(0px,(100vw-1600px)/2)+3rem)] lg:-mr-[calc(max(0px,(100vw-1600px)/2)+3rem)] select-none">
+            <div className="relative w-[calc(100%+3rem)] -mx-6 h-[300px] sm:mx-0 sm:w-full sm:h-[400px] lg:h-full lg:w-[calc(100%+max(0px,(100vw-1600px)/2)+3rem)] lg:-mr-[calc(max(0px,(100vw-1600px)/2)+3rem)] select-none">
               <Image
                 src="/assets/kda_frames.png"
                 alt="Установка КДА"
